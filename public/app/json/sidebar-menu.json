@@ -1,0 +1,23 @@
+[
+    {
+        "text": "Dashboard",
+        "sref": "app.dashboard",
+        "icon": "icon-speedometer"
+    },
+    {
+        "text": "OWASP",
+        "sref": "app.owasp",
+        "icon": "icon-arrow-right-circle"
+    },
+    {
+        "text": "Projects",
+        "sref": "app.project",
+        "icon": "icon-arrow-right-circle"
+    },    
+    {
+        "text": "Setting",
+        "sref": "app.setting",
+        "icon": "icon-settings"
+    }
+
+]

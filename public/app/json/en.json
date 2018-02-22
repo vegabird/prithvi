@@ -1,0 +1,18 @@
+{
+
+  "sidebar": {
+    
+    "nav": {
+      "DASHBOARD": "Dashboard",
+      "WIDGETS": "Widgets",
+      "DOCUMENTATION": "Documentation",     
+      
+      "table": {
+        "TABLE": "Table",
+        "STANDARD": "Standard",
+        "EXTENDED": "Extended",
+        "DATATABLE": "Datatable"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" data-ng-app="angle">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <meta name="description" content="{{app.description}}">
+   <meta name="keywords" content="report, prithvi, vulnerability">
+   <link rel="icon" href="app/img/favicon.png" type="image/png">
+   <title data-ng-bind="::pageTitle()">Prithvi - A Vulnerabilty Report Generation Tool</title>
+   <!-- Bootstrap styles-->
+			<link rel="stylesheet" href="app/css/style.css" >
+   <link rel="stylesheet" href="app/css/bootstrap.css" data-ng-if="!app.layout.isRTL">
+   <!-- <link rel="stylesheet" href="app/css/bootstrap-rtl.css" data-ng-if="app.layout.isRTL"> -->
+   <!-- Application styles-->
+	<!-- <link rel="stylesheet" href="app/css/style.css" data-ng-if="!app.layout.isRTL"> -->
+   <link rel="stylesheet" href="app/css/app.css" data-ng-if="!app.layout.isRTL">
+   <!-- <link rel="stylesheet" href="app/css/app-rtl.css" data-ng-if="app.layout.isRTL"> -->
+   <!-- Themes-->
+   <link rel="stylesheet" ng-href="{{app.layout.theme}}" data-ng-if="app.layout.theme">
+</head>
+
+<body data-ng-class="{ 'layout-fixed' : app.layout.isFixed, 'aside-collapsed' : app.layout.isCollapsed, 'layout-boxed' : app.layout.isBoxed, 'layout-fs': app.useFullLayout, 'hidden-footer': app.hiddenFooter, 'layout-h': app.layout.horizontal, 'aside-float': app.layout.isFloat, 'aside-toggled': app.asideToggled, 'aside-collapsed-text': app.layout.isCollapsedText}">
+   <div data-preloader></div>
+   <div class="wrapper" data-ui-view="" data-autoscroll="false"></div>
+	
+   <script src="app/js/base.js"></script>
+   <script src="app/js/app.js"></script>
+   <script src="vendor/downloader/angular-file-saver.js"></script>
+   <script src="vendor/downloader/angular-file-saver.bundle.js"></script>
+   <script src="vendor/notify/notificationDrtv.js"></script>
+   <script src="vendor/notify/notificationJqueryPlugin.js"></script>
+   <script src="vendor/notify/notificationService.js"></script>
+   <script src="app/js/appRouter.js"></script>
+
+</body>
+
+</html>

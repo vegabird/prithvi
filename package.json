@@ -1,0 +1,17 @@
+{
+  "name": "vulnerabilityrepoter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "impraveensingh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "multer": "^1.3.0",
+    "mysql": "^2.15.0",
+    "officegen": "^0.4.5"
+  }
+}

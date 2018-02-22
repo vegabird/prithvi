@@ -1,0 +1,37 @@
+<div>
+	<div class="modal-header">
+		<h3 class="modal-title">Project Detail</h3> </div>
+	<div class="modal-body">
+		<div class="panel-body">
+			<form name="serviceForm" class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label">Project Name</label>
+					<p class="form-control">{{vm.entity.projectName}}</p>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Company Name</label>
+					<p class="form-control">{{vm.entity.companyName}}</p>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Application Type</label>
+					<p class="form-control">{{vm.entity.appType}}</p>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Start Date</label>
+					<p class="form-control">{{vm.entity.startDate}}</p>
+				</div>
+				<div class="form-group">
+					<label class="control-label">End Date</label>
+					<p class="form-control">{{vm.entity.endDate}}</p>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Analyst Name</label>
+					<p class="form-control">{{vm.entity.analystName}}</p>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="$close()">Cancel</button>
+	</div>
+</div>

@@ -1,0 +1,65 @@
+<div class="row" ng-controller="dashController">
+   <div class="col-lg-3 col-sm-6">
+      <!-- START widget-->
+      <div class="panel widget bg-primary">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-primary-dark pv-lg">
+               <em class="icon-cloud-upload fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">{{project}}</div>
+               <div class="text-uppercase">Projects</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-sm-6">
+      <!-- START widget-->
+      <div class="panel widget bg-purple">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-purple-dark pv-lg">
+               <em class="icon-globe fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">{{vuln}}</div>
+               <div class="text-uppercase">Vulnerabilities</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+      <!-- START widget-->
+      <div class="panel widget bg-green">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-green-dark pv-lg">
+               <em class="icon-bubbles fa-3x"></em>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <div class="h2 mt0">{{owasp}}</div>
+               <div class="text-uppercase">Owasp</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="col-lg-3 col-md-6 col-sm-12">
+      <!-- START date widget-->
+      <div class="panel widget">
+         <div class="row row-table">
+            <div class="col-xs-4 text-center bg-green pv-lg">
+               <!-- See formats: https://docs.angularjs.org/api/ng/filter/date-->
+               <now class="text-sm" format="MMMM"></now>
+               <br/>
+               <now class="h2 mt0" format="d"></now>
+            </div>
+            <div class="col-xs-8 pv-lg">
+               <now class="text-uppercase" format="EEEE"></now>
+               <br/>
+               <now class="h2 mt0" format="h:mm"></now>
+               <now class="text-muted text-sm" format="a"></now>
+            </div>
+         </div>
+      </div>
+      <!-- END date widget-->
+   </div>
+</div>
+</div>

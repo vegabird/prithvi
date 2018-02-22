@@ -1,0 +1,14 @@
+<h3>PROJECT</h3>
+<div class="container-fluid" ng-controller="projectController as vm">
+	<div>
+		<div style="padding-left: 5px;" class="form-inline">
+			<label style="margin-right: 20px;">Application Type</label>
+			<select id="appType" name="appType" class="form-control" ng-model="vm.appType" ng-options="x for x in vm.applicationType" ng-change="vm.view()">
+				<option value="">Please Select...</option>
+			</select>
+			<button type="button" id="addOwasp" class="btn btn-success pull-right" ng-click="vm.addOwasp()">Add Row</button>
+		</div>
+		<br />
+		<div id="serviceGrid" ui-grid-move-columns ui-grid-selection ui-grid-resize-columns ui-grid-pinning ui-grid-exporter ui-grid-auto-resize ui-grid-edit ui-grid="vm.serviceGrid" style="width:100%" class="influxGrid"></div>
+	</div>
+</div>

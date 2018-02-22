@@ -1,0 +1,31 @@
+<nav class="navbar topnavbar" role="navigation">   
+   <div class="navbar-header">
+      <a class="navbar-brand" href="#/">
+         <div class="brand-logo">
+            <img class="img-responsive" src="app/img/logo.png" alt="App Logo" />
+         </div>
+         <div class="brand-logo-collapsed">
+            <img class="img-responsive" src="app/img/logo-single.png" alt="App Logo" />
+         </div>
+      </a>
+   </div>
+   <div class="nav-wrapper">      
+      <ul class="nav navbar-nav">
+         <li>            
+            <a class="hidden-xs" href="" trigger-resize="" ng-click="app.layout.isCollapsed = !app.layout.isCollapsed" ng-if="!app.layout.isCollapsedText">
+               <em class="fa fa-navicon"></em>
+            </a>            
+            <a class="visible-xs sidebar-toggle" href="" ng-click="app.asideToggled = !app.asideToggled">
+               <em class="fa fa-navicon"></em>
+            </a>
+         </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">      
+         <li class="visible-lg">
+            <a href="" toggle-fullscreen="toggle-fullscreen">
+               <em class="fa fa-expand"></em>
+            </a>
+         </li>
+      </ul>      
+   </div>   
+</nav>

@@ -1,0 +1,35 @@
+<div>
+	<div class="modal-header">
+		<h3 class="modal-title">Add Project</h3> </div>
+	<div class="modal-body">
+		<div class="panel-body">
+			<form name="serviceForm" class="form-horizontal">
+				<div class="form-group">
+					<label class="control-label">Project Name</label>
+					<input class="form-control" type="text" ng-model="vm.entity.projectName" /> </div>
+				<div class="form-group">
+					<label class="control-label">Company Name</label>
+					<input class="form-control" type="text" ng-model="vm.entity.companyName" /> </div>
+				<div class="form-group">
+					<label class="control-label">Application Type</label>
+					<select id="entityAppType" name="entityAppType" class="form-control" ng-model="vm.entity.appType" ng-options="x for x in vm.entity.applicationType">
+						<option value="">Please Select...</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Start Date</label>
+					<input class="form-control" type="text" ng-model="vm.entity.startDate" /> </div>
+				<div class="form-group">
+					<label class="control-label">End Date</label>
+					<input class="form-control" type="text" ng-model="vm.entity.endDate" /> </div>
+				<div class="form-group">
+					<label class="control-label">Analyst Name</label>
+					<input class="form-control" type="text" ng-model="vm.entity.analystName" /> </div>
+			</form>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="vm.save()">Save</button>
+		<button class="btn btn-primary" ng-click="$close()">Cancel</button>
+	</div>
+</div>

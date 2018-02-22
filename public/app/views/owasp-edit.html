@@ -1,0 +1,38 @@
+<div>
+	<div class="modal-header">
+		<h3 class="modal-title">Edit Owasp</h3>
+	</div>
+	<div class="modal-body">
+		<div class="panel-body">
+		<form name="serviceForm" class="form-horizontal">			
+				<div class="form-group">
+					<label class="control-label">Application Type</label>
+					<select id="entityAppType" name="entityAppType" class="form-control" ng-model="vm.entity.appType" ng-options="x for x in vm.entity.applicationType" ng-change="vm.view()">
+						<option value="">Please Select...</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Vulnerability Name</label>
+					<input class="form-control" type="text" ng-model="vm.entity.vulName" />
+				</div>
+				<div class="form-group">
+					<label class="control-label">OWASP Name</label>
+					<input class="form-control" type="text" ng-model="vm.entity.owaspName" />
+				</div>
+				<div class="form-group">
+					<label class="control-label">Vulnerability Detail</label>
+					<textarea class="form-control" type="text" ng-model="vm.entity.vulDetail" ></textarea>
+				</div>
+				<div class="form-group">
+					<label class="control-label">Vulnerability Recommendation</label>
+					<textarea class="form-control" type="text" ng-model="vm.entity.vulRecommend"></textarea>
+				</div>			
+		</form>
+	</div>
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="vm.update()">Update</button>
+		<button class="btn btn-primary" ng-click="vm.remove()">Delete</button>
+		<button class="btn btn-primary" ng-click="$close()">Cancel</button>
+	</div>
+</div>
